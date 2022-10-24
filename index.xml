@@ -1,9 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>My New Hugo Site</title>
-        <link>https://ericpersonal.github.io/</link>
-        <description>This is my cool site</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-tw</language>
-            <atom:link href="https://ericpersonal.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <title>Hi I&#39;m Eric</title>
+        <link>https://bsexp301479.github.io/</link>
+        <description>Eric的各種學習紀錄與分享</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-tw</language><managingEditor>eric50603@gmail.com (EricWu)</managingEditor>
+            <webMaster>eric50603@gmail.com (EricWu)</webMaster><copyright>EricWu</copyright>
+            <atom:link href="https://bsexp301479.github.io/index.xml" rel="self" type="application/rss+xml" />
         </channel>
 </rss>
