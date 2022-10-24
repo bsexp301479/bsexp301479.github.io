@@ -1,12 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Hi I&#39;m Eric</title>
-        <link>https://bsexp301479.github.io/</link>
-        <description>Eric的各種學習紀錄與分享</description>
+        <title>測試 - 標籤 - Hi I&#39;m Eric</title>
+        <link>https://bsexp301479.github.io/tags/%E6%B8%AC%E8%A9%A6/</link>
+        <description>測試 - 標籤 - Hi I&#39;m Eric</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-tw</language><managingEditor>eric50603@gmail.com (EricWu)</managingEditor>
-            <webMaster>eric50603@gmail.com (EricWu)</webMaster><copyright>EricWu</copyright><lastBuildDate>Mon, 24 Oct 2022 09:29:22 &#43;0800</lastBuildDate>
-            <atom:link href="https://bsexp301479.github.io/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+            <webMaster>eric50603@gmail.com (EricWu)</webMaster><copyright>EricWu</copyright><lastBuildDate>Mon, 24 Oct 2022 09:29:22 &#43;0800</lastBuildDate><atom:link href="https://bsexp301479.github.io/tags/%E6%B8%AC%E8%A9%A6/" rel="self" type="application/rss+xml" /><item>
     <title>My First Post</title>
     <link>https://bsexp301479.github.io/posts/my-first-post/</link>
     <pubDate>Mon, 24 Oct 2022 09:29:22 &#43;0800</pubDate>
