@@ -4,7 +4,15 @@
         <link>https://bsexp301479.github.io/posts/</link>
         <description>所有文章 | Hi I&#39;m Eric</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-tw</language><managingEditor>eric50603@gmail.com (EricWu)</managingEditor>
-            <webMaster>eric50603@gmail.com (EricWu)</webMaster><copyright>EricWu</copyright><lastBuildDate>Mon, 24 Oct 2022 09:29:22 &#43;0800</lastBuildDate><atom:link href="https://bsexp301479.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>eric50603@gmail.com (EricWu)</webMaster><copyright>EricWu</copyright><lastBuildDate>Tue, 25 Oct 2022 14:52:23 &#43;0800</lastBuildDate><atom:link href="https://bsexp301479.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo網站建構教學</title>
+    <link>https://bsexp301479.github.io/posts/hugo-setup-tutotial/</link>
+    <pubDate>Tue, 25 Oct 2022 14:52:23 &#43;0800</pubDate>
+    <author>EricWu</author>
+    <guid>https://bsexp301479.github.io/posts/hugo-setup-tutotial/</guid>
+    <description><![CDATA[讓我們來開始使用Hugo架設個人網站吧~~ 系統環境介紹 Windows10 使用Mac的話也別擔心只有一些小步驟有點差異而已~ 開始建構自己的部落格囉 Step1.]]></description>
+</item>
+<item>
     <title>Eric&#39;s Blog開張啦!!!</title>
     <link>https://bsexp301479.github.io/posts/my-first-post/</link>
     <pubDate>Mon, 24 Oct 2022 09:29:22 &#43;0800</pubDate>
