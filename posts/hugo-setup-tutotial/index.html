@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/bsexp301479.github.io\/posts\/hugo-setup-tutotial\/"
-        },"genre": "posts","keywords": "Hugo","wordcount":  453 ,
+        },"genre": "posts","keywords": "Hugo","wordcount":  895 ,
         "url": "https:\/\/bsexp301479.github.io\/posts\/hugo-setup-tutotial\/","datePublished": "2022-10-25T14:52:23+08:00","dateModified": "2022-10-25T14:52:23+08:00","license": "EricWu","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -70,8 +70,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Hugo網站建構教學</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>EricWu</a></span>&nbsp;<span class="post-category">收錄於 <a href="/categories/%E9%83%A8%E8%90%BD%E6%A0%BC%E6%9E%B6%E8%A8%AD/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>部落格架設</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-25">2022-10-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;約 453 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;預計閱讀 1 分鐘&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-25">2022-10-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;約 895 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;預計閱讀 2 分鐘&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目錄</span>
@@ -83,7 +83,8 @@
     <li><a href="#開始建構自己的部落格囉">開始建構自己的部落格囉</a>
       <ul>
         <li><a href="#step1相關套件安裝">Step1.相關套件安裝</a></li>
-        <li><a href="#数学公式">数学公式</a></li>
+        <li><a href="#step2建立blog網站">Step2.建立Blog網站</a></li>
+        <li><a href="#step3加入文章吧-ﾟﾟo彡ﾟ">step3.加入文章吧!!( ﾟ∀ﾟ)o彡ﾟ</a></li>
       </ul>
     </li>
   </ul>
@@ -121,44 +122,125 @@
 <p>接下來我們就照著Hugo的官方文件開始吧!</p>
 <p><a href="https://gohugo.io/getting-started/quick-start/" target="_blank" rel="noopener noreffer ">Hugo建構教學</a></p>
 <p>Windows系統需要先安裝CHOCOLATEY套裝管理器</p>
-<pre tabindex="0"><code class="language-PowerSheel" data-lang="PowerSheel">Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))
-</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">resources</span>:
-</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">featured-image</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">src</span>: <span style="color:#ae81ff">featured-image.jpg</span>
-</span></span><span style="display:flex;"><span>- <span style="color:#f92672">name</span>: <span style="color:#ae81ff">featured-image-preview</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">src</span>: <span style="color:#ae81ff">featured-image-preview.jpg</span>
-</span></span></code></pre></div><h3 id="数学公式">数学公式</h3>
-<p><strong>LoveIt</strong> 基于 <a href="https://katex.org/" target="_blank" rel="noopener noreffer ">$ \KaTeX $</a> 提供数学公式的支持.
-在你的 <a href="../theme-documentation-basics#site-configuration" rel="">网站配置</a> 中的 <code>[params.math]</code> 下面设置属性 <code>enable = true</code>,
-并在文章的前置参数中设置属性 <code>math: true</code>来启用数学公式的自动渲染.
-<div class="details admonition tip open">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="nb">Set-ExecutionPolicy</span> <span class="n">Bypass</span> <span class="n">-Scope</span> <span class="k">Process</span> <span class="n">-Force</span><span class="p">;</span> <span class="no">[System.Net.ServicePointManager]</span><span class="p">::</span><span class="n">SecurityProtocol</span> <span class="p">=</span> <span class="no">[System.Net.ServicePointManager]</span><span class="p">::</span><span class="n">SecurityProtocol</span> <span class="o">-bor</span> <span class="n">3072</span><span class="p">;</span> <span class="nb">iex </span><span class="p">((</span><span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Net</span><span class="p">.</span><span class="n">WebClient</span><span class="p">).</span><span class="n">DownloadString</span><span class="p">(</span><span class="s1">&#39;https://chocolatey.org/install.ps1&#39;</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安裝完成後執行<code>choco</code>如有得到相關版本資訊則代表安裝完成，例如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">choco</span> 
+</span></span><span class="line"><span class="cl"><span class="n">Chocolatey</span> <span class="n">v1</span><span class="p">.</span><span class="n">2</span><span class="p">.</span><span class="n">0</span>
+</span></span><span class="line"><span class="cl"><span class="n">Please</span> <span class="n">run</span> <span class="s1">&#39;choco -?&#39;</span> <span class="n">or</span> <span class="s1">&#39;choco &lt;command&gt; -?&#39;</span> <span class="k">for</span> <span class="n">help</span> <span class="n">menu</span><span class="p">.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>確認安裝完後就可以開始安裝Hugo了</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">choco</span> <span class="n">install</span> <span class="n">hugo</span> <span class="n">-confirm</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="details admonition note open">
         <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>技巧<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Mac安裝指令<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">有一份 <a href="https://katex.org/docs/supported.html" target="_blank" rel="noopener noreffer ">$ \KaTeX $ 中支持的 $ \TeX $ 函数</a> 清单.</div>
+            <div class="admonition-content">$ brew install hugo</div>
         </div>
-    </div></p>
-<h4 id="公式块">公式块</h4>
-<p>默认的公式块分割符是 <code>$$</code>/<code>$$</code> 和 <code>\\[</code>/<code>\\]</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>$$ c = \pm\sqrt{a^2 + b^2} $$
-</span></span><span style="display:flex;"><span>\\[ f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \\]
-</span></span></code></pre></div><p>呈现的输出效果如下:
-$$ c = \pm\sqrt{a^2 + b^2} $$
-\[ f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \]</p>
-<h4 id="行内公式">行内公式</h4>
-<p>默认的行内公式分割符是  <code>$</code>/<code>$</code> 和 <code>\\(</code>/<code>\\)</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>$ c = \pm\sqrt{a^2 + b^2} $ 和 \\( f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \\)
-</span></span></code></pre></div><p>呈现的输出效果如下:
-$ c = \pm\sqrt{a^2 + b^2} $ 和 \( f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi \)
-<div class="details admonition tip open">
+    </div>
+<p>上述步驟執行完後就完成基本的安裝了｡:.ﾟヽ(*´∀`)ﾉﾟ.:｡</p>
+<h3 id="step2建立blog網站">Step2.建立Blog網站</h3>
+<p>首先先下Command移到所想要新增網站的位置
+再執行網站的新增</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="nb">CD </span><span class="n">anyfolder</span> 
+</span></span><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">new</span> <span class="n">site</span> <span class="n">anywebsitename</span>  <span class="c">## 建立anywebsitename網站資料夾</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Hugo會幫你把所有預設所需要的資料夾都建立出來</p>
+<p>接下來就可以找我們所想要的佈景主題了</p>
+<p><a href="https://themes.gohugo.io/" target="_blank" rel="noopener noreffer ">Hugo Themes</a>
+Hugo內提供了相當多的網站模板</p>
+<p>接下來就是套用我們所喜歡的模板了</p>
+<p>筆者是選擇<a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer ">LoveIt</a>這款模板</p>
+<p>先將下Command移到網站資料夾下
+再將模板給下載至<code>網站名稱/Themes</code>裡</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="nb">CD </span><span class="n">anywebsitename</span> <span class="c">## 先移至網站資料夾下 </span>
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">dillonzq</span><span class="p">/</span><span class="n">LoveIt</span><span class="p">.</span><span class="n">git</span> <span class="n">themes</span><span class="p">/</span><span class="n">LoveIt</span>  <span class="c">## 將整個模板複製到網站資料夾中的Themes</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>模板下載完後必須先修改<code>網站資料夾中的config.toml</code></p>
+<p>預設內容應該是空白的</p>
+<p>我們就加入幾行語法</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Toml" data-lang="Toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;https://使用者名稱.github.io/&#39;</span>  <span class="c">## 這個是到時候將網站發布至GitHub會用到的預設URL</span>
+</span></span><span class="line"><span class="cl"><span class="nx">languageCode</span> <span class="p">=</span> <span class="s1">&#39;zh-tw&#39;</span>  <span class="c">## 網站語系</span>
+</span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;任意修改&#34;</span>  <span class="c">## 網站Title</span>
+</span></span><span class="line"><span class="cl"><span class="nx">theme</span> <span class="p">=</span> <span class="s1">&#39;LoveIt&#39;</span>  <span class="c">## 網站使用主題</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="details admonition tip open">
         <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>技巧<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>設定網站主題技巧<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content">你可以在 <a href="../theme-documentation-basics#site-configuration" rel="">网站配置</a> 中自定义公式块和行内公式的分割符.</div>
+            <div class="admonition-content"><p>必須和<code>網站名稱/Themes</code>內的主題資料夾名稱相同</p>
+<p>否則會出現錯誤</p>
+</div>
         </div>
-    </div></p>
+    </div>
+<h3 id="step3加入文章吧-ﾟﾟo彡ﾟ">step3.加入文章吧!!( ﾟ∀ﾟ)o彡ﾟ</h3>
+<p>完成上述的步驟的話，恭喜你已經完成將近50%的部落格建構了</p>
+<p>接下來讓我們來新增文章吧</p>
+<p>一樣在網站資料夾下執行新增文章指令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">new</span> <span class="n">posts</span><span class="p">/</span><span class="n">任意檔名</span><span class="p">.</span><span class="nb">md
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>文章檔名須注意重點<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>檔名命名原則盡量以小寫英文及下底線進行命名</p>
+<p>未來在建立圖檔連結時比較方便</p>
+</div>
+        </div>
+    </div>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
