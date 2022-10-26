@@ -4,18 +4,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Hugo網站建構教學 - Hi I&#39;m Eric</title><meta name="Description" content="Eric的各種學習紀錄與分享"><meta property="og:title" content="Hugo網站建構教學" />
-<meta property="og:description" content="讓我們來開始使用Hugo架設個人網站吧~~ 系統環境介紹 Windows10 使用Mac的話也別擔心只有一些小步驟有點差異而已~ 開始建構自己的部落格囉 Step1." />
+        <title>Hugo網站建構教學 - Hi I&#39;m Eric</title><meta name="Description" content="讓我們來開始使用Hugo架設個人網站吧~~"><meta property="og:title" content="Hugo網站建構教學" />
+<meta property="og:description" content="讓我們來開始使用Hugo架設個人網站吧~~" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://bsexp301479.github.io/posts/hugo-setup-tutotial/" /><meta property="og:image" content="https://bsexp301479.github.io/Hugo.svg" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://bsexp301479.github.io/posts/hugo-setup-tutotial/" /><meta property="og:image" content="https://bsexp301479.github.io/posts/hugo-setup-tutotial/featured-image.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-10-25T14:52:23+08:00" />
 <meta property="article:modified_time" content="2022-10-25T14:52:23+08:00" /><meta property="og:site_name" content="Hi I&#39;m Eric" />
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://bsexp301479.github.io/Hugo.svg"/>
-
+<meta name="twitter:image" content="https://bsexp301479.github.io/posts/hugo-setup-tutotial/featured-image.png"/>
 <meta name="twitter:title" content="Hugo網站建構教學"/>
-<meta name="twitter:description" content="讓我們來開始使用Hugo架設個人網站吧~~ 系統環境介紹 Windows10 使用Mac的話也別擔心只有一些小步驟有點差異而已~ 開始建構自己的部落格囉 Step1."/>
+<meta name="twitter:description" content="讓我們來開始使用Hugo架設個人網站吧~~"/>
 <meta name="application-name" content="Hi I&#39;m Eric">
 <meta name="apple-mobile-web-app-title" content="Hi I&#39;m Eric"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><meta property="article:tag" content="Hugo"><meta property="article:section" content="部落格架設"><link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://bsexp301479.github.io/posts/hugo-setup-tutotial/" /><link rel="prev" href="https://bsexp301479.github.io/posts/my-first-post/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -28,13 +27,18 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/bsexp301479.github.io\/posts\/hugo-setup-tutotial\/"
-        },"image": ["https:\/\/bsexp301479.github.io\/Hugo.svg"],"genre": "posts","keywords": "Hugo","wordcount":  1343 ,
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/bsexp301479.github.io\/posts\/hugo-setup-tutotial\/featured-image.png",
+                            "width":  1000 ,
+                            "height":  500 
+                        }],"genre": "posts","keywords": "Hugo","wordcount":  1343 ,
         "url": "https:\/\/bsexp301479.github.io\/posts\/hugo-setup-tutotial\/","datePublished": "2022-10-25T14:52:23+08:00","dateModified": "2022-10-25T14:52:23+08:00","license": "EricWu","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
                 "name": "EricWu", "url": "https://bsexp301479.github.io/"},
-        "description": ""
+        "description": "讓我們來開始使用Hugo架設個人網站吧~~"
     }
     </script></head>
     <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -72,7 +76,14 @@
             <div class="post-meta-line"><span class="post-author"><a href="https://bsexp301479.github.io/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>EricWu</a></span>&nbsp;<span class="post-category">收錄於 <a href="/categories/%E9%83%A8%E8%90%BD%E6%A0%BC%E6%9E%B6%E8%A8%AD/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>部落格架設</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-25">2022-10-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;約 1343 字&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;預計閱讀 3 分鐘&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  data-kept="">
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/hugo-setup-tutotial/featured-image.png"
+        data-srcset="/posts/hugo-setup-tutotial/featured-image.png, /posts/hugo-setup-tutotial/featured-image.png 1.5x, /posts/hugo-setup-tutotial/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/posts/hugo-setup-tutotial/featured-image.png"
+        title="讓我們來開始使用Hugo架設個人網站吧~~" /></div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目錄</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
@@ -91,24 +102,8 @@
     <li><a href="#結語">結語</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>
-  
-    <br />
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  <img src="Hugo.svg" alt = "Hugo圖片" />
-</p>
+            </div><div class="content" id="content"><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h1 id="讓我們來開始使用hugo架設個人網站吧">讓我們來開始使用Hugo架設個人網站吧~~</h1>
 <h2 id="系統環境介紹">系統環境介紹</h2>
 <blockquote>
