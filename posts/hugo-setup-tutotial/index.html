@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/bsexp301479.github.io\/posts\/hugo-setup-tutotial\/"
-        },"genre": "posts","keywords": "Hugo","wordcount":  895 ,
+        },"genre": "posts","keywords": "Hugo","wordcount":  1343 ,
         "url": "https:\/\/bsexp301479.github.io\/posts\/hugo-setup-tutotial\/","datePublished": "2022-10-25T14:52:23+08:00","dateModified": "2022-10-25T14:52:23+08:00","license": "EricWu","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -70,8 +70,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Hugo網站建構教學</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>EricWu</a></span>&nbsp;<span class="post-category">收錄於 <a href="/categories/%E9%83%A8%E8%90%BD%E6%A0%BC%E6%9E%B6%E8%A8%AD/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>部落格架設</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-25">2022-10-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;約 895 字&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;預計閱讀 2 分鐘&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-25">2022-10-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;約 1343 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;預計閱讀 3 分鐘&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>目錄</span>
@@ -85,8 +85,10 @@
         <li><a href="#step1相關套件安裝">Step1.相關套件安裝</a></li>
         <li><a href="#step2建立blog網站">Step2.建立Blog網站</a></li>
         <li><a href="#step3加入文章吧-ﾟﾟo彡ﾟ">step3.加入文章吧!!( ﾟ∀ﾟ)o彡ﾟ</a></li>
+        <li><a href="#step4預覽網站">step4.預覽網站</a></li>
       </ul>
     </li>
+    <li><a href="#結語">結語</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><p>
@@ -181,7 +183,7 @@ Hugo內提供了相當多的網站模板</p>
 <p>接下來就是套用我們所喜歡的模板了</p>
 <p>筆者是選擇<a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer ">LoveIt</a>這款模板</p>
 <p>先將下Command移到網站資料夾下
-再將模板給下載至<code>網站名稱/Themes</code>裡</p>
+再將模板給下載至<code>網站資料夾/Themes</code>裡</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -214,7 +216,7 @@ Hugo內提供了相當多的網站模板</p>
             <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>設定網站主題技巧<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><p>必須和<code>網站名稱/Themes</code>內的主題資料夾名稱相同</p>
+            <div class="admonition-content"><p>必須和<code>網站資料夾/Themes</code>內的主題資料夾名稱相同</p>
 <p>否則會出現錯誤</p>
 </div>
         </div>
@@ -241,6 +243,61 @@ Hugo內提供了相當多的網站模板</p>
 </div>
         </div>
     </div>
+<p>文章加入後預設都會是為草稿狀態</p>
+<p>我們可以先來看一下剛剛所建立的文章</p>
+<p>路徑為<code>網站資料夾/content/post</code>裡面就有我們剛剛所新增的文章檔案</p>
+<p>使用編輯器打開後可以看到裡面的內容為</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Markdown" data-lang="Markdown"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: &#34;My First Post&#34;
+</span></span><span class="line"><span class="cl">date: 2020-08-15T15:46:23+08:00
+</span></span><span class="line"><span class="cl">draft: true
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></div><p>用dash所包起來的內容為文章所會用到的各種參數</p>
+<p>可用參數需要看所使用的網站模板有提供那些參數做使用</p>
+<p>要將文章從草稿狀態改為發布狀態只需將修改draft:true為<code>draft:false</code>即可</p>
+<p>想要撰寫的內容就寫在文章參數的下方，例如：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Markdown" data-lang="Markdown"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: &#34;My First Post&#34;
+</span></span><span class="line"><span class="cl">date: 2020-08-15T15:46:23+08:00
+</span></span><span class="line"><span class="cl">draft: true
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">我的文章內容
+</span></span></code></pre></div><h3 id="step4預覽網站">step4.預覽網站</h3>
+<p>接著就可以來預覽我們精心製作的網站</p>
+<p>一樣在資料夾路徑下執行Command</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">serve</span>  <span class="c">## 網站本機預覽</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>指令如果有執行成功的話最下方會有一行</p>
+<pre tabindex="0"><code>Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+</code></pre><p>就代表我們的本機網站建構成功了唷</p>
+<p>就可以依照上方的連結去做瀏覽</p>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>如果網站內有草稿文章也想要一起預覽時<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">serve</span> <span class="n">-D</span>  <span class="c">## 草稿文章一併顯示</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<h2 id="結語">結語</h2>
+<p>上述教學為基本的Hugo網站建置</p>
+<p>之後會再新增GitHub Page發布以及一些Hugo的進階用法</p>
+<p>本次的教學就先到此</p>
+<p>下次再見囉&lt; (￣︶￣)&gt;</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
