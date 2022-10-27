@@ -4,9 +4,17 @@
         <link>https://bsexp301479.github.io/</link>
         <description>Eric的各種學習紀錄與分享</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-tw</language><managingEditor>eric50603@gmail.com (EricWu)</managingEditor>
-            <webMaster>eric50603@gmail.com (EricWu)</webMaster><copyright>EricWu</copyright><lastBuildDate>Tue, 25 Oct 2022 14:52:23 &#43;0800</lastBuildDate>
+            <webMaster>eric50603@gmail.com (EricWu)</webMaster><copyright>EricWu</copyright><lastBuildDate>Thu, 27 Oct 2022 14:49:41 &#43;0800</lastBuildDate>
             <atom:link href="https://bsexp301479.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>發佈部落格到GitHub Pages囉!!</title>
+    <link>https://bsexp301479.github.io/posts/upload_blog_to_github/</link>
+    <pubDate>Thu, 27 Oct 2022 14:49:41 &#43;0800</pubDate>
+    <author>EricWu</author>
+    <guid>https://bsexp301479.github.io/posts/upload_blog_to_github/</guid>
+    <description><![CDATA[開始把部落格發佈到GitHub吧! 前置作業 前一篇的文章大家有沒有仔細讀呀 在建構我們的部落格前須先完成Git的安裝及GitHub的註冊 如果都完]]></description>
+</item>
+<item>
     <title>Hugo網站建構教學</title>
     <link>https://bsexp301479.github.io/posts/hugo-setup-tutotial/</link>
     <pubDate>Tue, 25 Oct 2022 14:52:23 &#43;0800</pubDate>
